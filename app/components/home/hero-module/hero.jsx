@@ -3,7 +3,7 @@ import React from "react";
 import Heading from "./heading";
 import Image from "next/image";
 import arrow from "@/public/arrow.svg";
-import TalkButton from "../../ecyce/talkButton";
+import Button from "../../ecyce/buttons";
 import Container from "../../ecyce/container";
 
 const Hero = () => {
@@ -20,7 +20,7 @@ const Hero = () => {
           Ready to transform your way of working?
           <Image src={arrow} className="absolute top-8 right-16 rotate-12" />
         </span>
-        <TalkButton type={'talk'} />
+        <Button type={'solid'} text='Let&apos;s talk'/>
       </Container>
     </div>
   );

@@ -38,7 +38,7 @@ const StatsPage = () => {
               <p className="text-xl text-balance">
                 More than just a service provider! We are a partner in growth
                 for over <b>50 amazing companies</b>. Each one has a unique story, and
-                we're thrilled to be part of it!
+                we&apos;re thrilled to be part of it!
               </p>
               <Image src={arrowStats} className="absolute top-0 right-0"/>
             </div>
