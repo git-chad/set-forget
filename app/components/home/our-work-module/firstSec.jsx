@@ -19,9 +19,49 @@ const FirstSec = () => {
 
         <div className="col-span-12 flex flex-col gap-10 py-16 justify-center items-center">
             <div className="w-full flex gap-5">
-                <div className="w-[427px] h-[464px] border border-[#5e5e5e] rounded-3.5xl flex justify-center items-center">Ben Collins</div>
-                <div className="w-[427px] h-[464px] border border-[#5e5e5e] rounded-3.5xl flex justify-center items-center">Ted Kaczynski</div>
-                <div className="w-[427px] h-[464px] border border-[#5e5e5e] rounded-3.5xl flex justify-center items-center">Marvin Heemeyer</div>
+              <div className="flip-card w-full">
+                <div className="flip-card-inner">
+                  <div className="flip-card-front w-[427px] h-[464px] border text-g-red border-g-red rounded-3.5xl flex justify-center items-center text-xl text-center">
+                    Google Workspace Automation
+                  </div>
+                  <div className="flip-card-back w-[427px] h-[464px] border bg-g-red text-g-red border-g-red rounded-3.5xl flex justify-center items-center text-xl text-center">
+                    🥵🥵🥵
+                  </div>
+                </div>
+              </div>
+
+              <div className="flip-card w-full">
+                <div className="flip-card-inner">
+                  <div className="flip-card-front w-[427px] h-[464px] border text-g-green border-g-green rounded-3.5xl flex justify-center items-center text-xl text-center">
+                    Google Add-Ons
+                  </div>
+                  <div className="flip-card-back w-[427px] h-[464px] bg-g-green border text-g-green border-g-green rounded-3.5xl flex justify-center items-center text-xl text-center">
+                    🤑🤑🤑
+                  </div>
+                </div>
+              </div>
+
+              <div className="flip-card w-full">
+                <div className="flip-card-inner">
+                  <div className="flip-card-front w-[427px] h-[464px] border text-g-blue border-g-blue rounded-3.5xl flex justify-center items-center text-xl text-center">
+                    Data Analytics tools
+                  </div>
+                  <div className="flip-card-back w-[427px] h-[464px] bg-g-blue border text-g-blue border-g-blue rounded-3.5xl flex justify-center items-center text-xl text-center">
+                    🍆🍆🍆
+                  </div>
+                </div>
+              </div>
+
+              <div className="flip-card w-full">
+                <div className="flip-card-inner">
+                  <div className="flip-card-front w-[427px] h-[464px] border text-g-yellow border-g-yellow rounded-3.5xl flex justify-center items-center text-xl text-center">
+                    Education tools
+                  </div>
+                  <div className="flip-card-back w-[427px] h-[464px] bg-g-yellow border text-g-yellow border-g-yellow rounded-3.5xl flex justify-center items-center text-xl text-center">
+                    🥴🥴🥴
+                  </div>
+                </div>
+              </div>
             </div>
             <Button type={'outline'} text={'See more!'}/>
         </div>

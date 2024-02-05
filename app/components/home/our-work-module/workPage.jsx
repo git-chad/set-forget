@@ -8,7 +8,6 @@ const WorkPage = () => {
     <div>
       <FirstSec />
       <SecondSec />
-      <Carousels type={'talk'}/>
     </div>
   );
 };

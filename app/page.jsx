@@ -5,6 +5,7 @@ import Carousels from "./components/ecyce/carousels";
 import WorkPage from "./components/home/our-work-module/workPage";
 import Lenis from "@studio-freight/lenis";
 import { useEffect } from "react";
+import LetsWorkPage from "./components/home/lets-work-module/letsWorkPage";
 
 export default function Home() {
   useEffect(() => {
@@ -23,6 +24,8 @@ export default function Home() {
       <StatsPage />
       <Carousels type="work" />
       <WorkPage />
+      <Carousels type={'talk'}/>
+      <LetsWorkPage/>
     </main>
   );
 }
