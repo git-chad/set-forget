@@ -3,7 +3,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import sfSmall from "@/app/images/logos/SfSmall.png";
 import Link from "next/link";
-import borgor from "@/public/borgor.svg";
+import borgor from "../../../public/borgor.svg";
 import Dropdown from "./dropdown";
 
 const Navbar = () => {
