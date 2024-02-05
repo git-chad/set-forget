@@ -18,7 +18,7 @@
 @font-face {
   font-family: "NeuePlak";
   src: url("/fonts/NeuePlak-ExtendedBold.ttf") format("truetype");
-  font-weight: bold; 
+  font-weight: bold;
   font-style: normal;
 }
 
@@ -45,7 +45,7 @@
   width: 100%;
   height: 464px;
   text-align: center;
-  transition: transform 0.54s cubic-bezier(0.79,0.14,0.15,0.86);
+  transition: transform 0.54s cubic-bezier(0.79, 0.14, 0.15, 0.86);
   transform-style: preserve-3d;
 }
 
@@ -58,9 +58,45 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden; 
+  backface-visibility: hidden;
 }
 
 .flip-card-back {
   transform: rotateY(180deg);
+}
+
+.icon {
+  width: 100%;
+  pointer-events: none;
+  &::after, &::before {
+      content: "";
+      display: block;
+      width: 80%;
+      background-color: white;
+      height: 3px;
+      border-radius: 10px;
+      margin: auto;
+      position: relative;
+      transition: top 0.3s, transform 0.3s;
+}
+
+  &::after {
+      top: -6px;
+  }
+  &::before {
+      top: 6px;
+  }
+}
+
+.menu-active {
+  &::after,
+
+  &::after {
+    top: -2px;
+    transform: rotate(45deg);
+  }
+  &::before {
+    top: 1px;
+    transform: rotate(-45deg);
+  }
 }

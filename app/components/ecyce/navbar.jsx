@@ -19,7 +19,18 @@ const Navbar = () => {
         </Link>
 
         <button onClick={() => setOpen(!open)}>
-          <Image src={borgor} className="w-8 h-8" alt="Borgor Logo" />
+          {/* <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="1.75" y1="8.16666" x2="26.25" y2="8.16666" stroke="#FFFAF0" stroke-width="3.5" stroke-linecap="round"/>
+            <line x1="1.75" y1="16.3333" x2="26.25" y2="16.3333" stroke="#FFFAF0" stroke-width="3.5" stroke-linecap="round"/>
+          </svg> */}
+
+          <a
+            className={`mobile-menu w-8 flex cursor-pointer ${
+              open ? "color-swap" : ""
+            }`}
+          >
+            <div className={`${open ? "menu-active" : ""} icon`}></div>
+          </a>
         </button>
       </div>
 
