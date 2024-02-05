@@ -1,4 +1,5 @@
 "use client";
+import './util.scss'
 import Image from "next/image";
 import React, { useState } from "react";
 import sfSmall from "@/app/images/logos/SfSmall.png";

@@ -1,5 +1,5 @@
 import { Poppins } from "next/font/google";
-import "./globals.scss";
+import "./globals.css";
 import Navbar from "./components/ecyce/navbar";
 import Footer from "./components/ecyce/footer";
 

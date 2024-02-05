@@ -10,7 +10,7 @@ const LetsWorkPage = () => {
         <div className="min-h-96">
           <h1 className="bold-neue text-heading leading-tight">Got an idea?</h1>
           <h2 className="reg-neue text-heading leading-tight">
-            Let's work together!
+            Let&apos;s work together!
           </h2>
           <Button type="solid" text="Let's Talk" />
         </div>
