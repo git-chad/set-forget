@@ -71,12 +71,13 @@ const Dropdown = ({ isOpen }) => {
             variants={containerVariants}
             initial="initial"
             animate="animate"
+            className="pb-32"
           >
             {routes.map((route, index) => (
               <div className="overflow-hidden" key={index}>
                 <motion.div variants={linkVariants}>
                   <Link href={route.path}>
-                    <p className={`reg-neue text-9xl text-center font-bold text-[#5e5e5e] ${route.hover} transition-colors duration-500 leading-none`}>
+                    <p className={`reg-neue text-8xl text-center font-bold text-[#5e5e5e] ${route.hover} transition-colors duration-500 leading-none`}>
                       {route.name}
                     </p>
                   </Link>

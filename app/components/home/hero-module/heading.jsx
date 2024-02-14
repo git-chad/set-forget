@@ -46,7 +46,7 @@ handleHorizontalAnim();
               {wordsHorizontal.map((word, index) => (
                 <span
                   key={index}
-                  className="min-w-[525px] text-center bold-neue pb-3"
+                  className="min-w-[525px] text-center bold-neue pb-5"
                 >
                   {word}
                 </span>

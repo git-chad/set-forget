@@ -24,8 +24,8 @@ const FirstSec = () => {
                   <div className="flip-card-front w-[427px] h-[464px] border text-g-red border-g-red rounded-3.5xl flex justify-center items-center text-xl text-center">
                     Google Workspace Automation
                   </div>
-                  <div className="flip-card-back w-[427px] h-[464px] border bg-g-red text-g-red border-g-red rounded-3.5xl flex justify-center items-center text-xl text-center">
-                    🥵🥵🥵
+                  <div className="flip-card-back w-[427px] h-[464px] border bg-g-red text-g-red border-g-red rounded-3.5xl flex justify-center items-center p-2">
+                    <p className='text-white '>We create solutions in your Workspace leveraging Apps Script, Google&apos;s programming language made to interact with its&apos; tools.</p>
                   </div>
                 </div>
               </div>
@@ -35,8 +35,8 @@ const FirstSec = () => {
                   <div className="flip-card-front w-[427px] h-[464px] border text-g-green border-g-green rounded-3.5xl flex justify-center items-center text-xl text-center">
                     Google Add-Ons
                   </div>
-                  <div className="flip-card-back w-[427px] h-[464px] bg-g-green border text-g-green border-g-green rounded-3.5xl flex justify-center items-center text-xl text-center">
-                    🤑🤑🤑
+                  <div className="flip-card-back w-[427px] h-[464px] bg-g-green border text-g-green border-g-green rounded-3.5xl flex justify-center items-center p-2">
+                    <p className='text-white font-normal'>Deploy your SaaS product in the Google Marketplace to broaden your market and also treat your users with new ways of using your software.</p>
                   </div>
                 </div>
               </div>
@@ -46,8 +46,8 @@ const FirstSec = () => {
                   <div className="flip-card-front w-[427px] h-[464px] border text-g-blue border-g-blue rounded-3.5xl flex justify-center items-center text-xl text-center">
                     Data Analytics tools
                   </div>
-                  <div className="flip-card-back w-[427px] h-[464px] bg-g-blue border text-g-blue border-g-blue rounded-3.5xl flex justify-center items-center text-xl text-center">
-                    🍆🍆🍆
+                  <div className="flip-card-back w-[427px] h-[464px] bg-g-blue border text-g-blue border-g-blue rounded-3.5xl flex justify-center items-center p-2">
+                    <p className='text-white font-normal'>We'll Take care of all your data&apos;s lifecycle, from retrieving to visualization for decision making.</p>
                   </div>
                 </div>
               </div>
@@ -57,8 +57,8 @@ const FirstSec = () => {
                   <div className="flip-card-front w-[427px] h-[464px] border text-g-yellow border-g-yellow rounded-3.5xl flex justify-center items-center text-xl text-center">
                     Education tools
                   </div>
-                  <div className="flip-card-back w-[427px] h-[464px] bg-g-yellow border text-g-yellow border-g-yellow rounded-3.5xl flex justify-center items-center text-xl text-center">
-                    🥴🥴🥴
+                  <div className="flip-card-back w-[427px] h-[464px] bg-g-yellow border text-g-yellow border-g-yellow rounded-3.5xl flex justify-center items-center p-2">
+                    <p className='text-sf-black font-normal'>Unlock the power of data to improve student outcomes.</p>
                   </div>
                 </div>
               </div>
