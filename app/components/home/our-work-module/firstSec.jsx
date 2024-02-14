@@ -47,7 +47,7 @@ const FirstSec = () => {
                     Data Analytics tools
                   </div>
                   <div className="flip-card-back w-[427px] h-[464px] bg-g-blue border text-g-blue border-g-blue rounded-3.5xl flex justify-center items-center p-2">
-                    <p className='text-white font-normal'>We'll Take care of all your data&apos;s lifecycle, from retrieving to visualization for decision making.</p>
+                    <p className='text-white font-normal'>We&apos;ll Take care of all your data&apos;s lifecycle, from retrieving to visualization for decision making.</p>
                   </div>
                 </div>
               </div>
