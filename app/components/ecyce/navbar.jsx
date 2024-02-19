@@ -11,7 +11,7 @@ const Navbar = () => {
 
   console.log(open, 'navbar open check');
   return (
-    <nav className="z-50 w-screen py-10 px-20 fixed bg-sf-black">
+    <nav className="z-50 w-screen py-10 px-20 fixed">
       <div className="mx-auto max-w-[1440px] h-8 flex justify-between items-center">
         <Link className="flex items-center space-x-2" href="/">
           <Image src={sfSmall} className="w-8 h-8" alt="Set & Forget Logo" />

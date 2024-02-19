@@ -5,7 +5,7 @@ import Container from "../../ecyce/container";
 
 const LetsWorkPage = () => {
   return (
-    <div className="bg-sf-black text-sf-cream">
+    <div className="bg-sf-black text-sf-cream py-16 px-20">
       <Container className="min-h-[70vh] flex justify-between items-center">
         <div className="min-h-96">
           <h1 className="bold-neue text-heading leading-tight">Got an idea?</h1>

@@ -18,7 +18,7 @@ const Footer = () => {
   ];
 
   return (
-    <div className="min-w-screen bg-[#111] border-t border-sf-cream/60 text-sf-cream flex justify-between items-center">
+    <div className="min-w-screen bg-[#111] border-t border-sf-cream/60 text-sf-cream flex justify-between items-center px-20">
       <Container className="flex justify-between w-full">
         <div className="flex flex-col min-h-96 justify-between py-8">
           <div className="flex items-center">
