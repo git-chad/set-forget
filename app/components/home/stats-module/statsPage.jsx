@@ -1,10 +1,10 @@
 import React from "react";
 import Container from "../../ecyce/container";
 import Image from "next/image";
-import marker from "@/public/marker.svg";
-import arrowStats from "@/public/arrow-stats.svg";
-import sparkle from "@/public/sparkle.svg";
-import blobCard from "@/public/blob-card.svg";
+import marker from "../../../../public/marker.svg";
+import arrowStats from "../../../../public/arrow-stats.svg";
+import sparkle from "../../../../public/sparkle.svg";
+import blobCard from "../../../../public/blob-card.svg";
 
 const StatsPage = () => {
   return (

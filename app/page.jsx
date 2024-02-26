@@ -1,5 +1,5 @@
 "use client";
-import Hero from "@/app/components/home/hero-module/hero";
+import Hero from "./components/home/hero-module/hero";
 import StatsPage from "./components/home/stats-module/statsPage";
 import Carousels from "./components/ecyce/carousels";
 import WorkPage from "./components/home/our-work-module/workPage";

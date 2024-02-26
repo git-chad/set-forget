@@ -4,7 +4,7 @@ import { AnimatePresence, motion, cubicBezier } from "framer-motion";
 
 const Dropdown = ({ isOpen }) => {
   const routes = [
-    { name: "Our work", path: "/projects", hover: 'hover:text-g-red' },
+    { name: "Our work", path: "/work", hover: 'hover:text-g-red' },
     { name: "Success stories", path: "/reviews", hover: 'hover:text-g-green' },
     { name: "About", path: "/about", hover: 'hover:text-g-blue' },
     { name: "Contact", path: "/contact", hover: 'hover:text-g-yellow' },

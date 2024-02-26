@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
-import quotes from '@/public/quotes.svg';
+import quotes from '../../../../public/quotes.svg';
 
 // Define your testimonials
 const testimonials = [

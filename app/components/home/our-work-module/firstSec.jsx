@@ -1,8 +1,8 @@
 import React from 'react'
 import Container from "../../ecyce/container";
 import Image from "next/image";
-import underline from "@/public/underline.svg";
-import arrow from "@/public/arrow.svg";
+import underline from "../../../../public/underline.svg";
+import arrow from "../../../../public/arrow.svg";
 import Button from "../../ecyce/buttons";
 
 const FirstSec = () => {

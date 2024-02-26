@@ -1,17 +1,17 @@
 import Image from "next/image";
-import sfSmall from "@/app/images/logos/SfSmall.png";
+import sfSmall from "../../images/logos/SfSmall.png";
 import Link from "next/link";
 import Container from "./container";
 import Button from "./buttons";
 import BuenosAiresClock from "./bsasClock";
-import githubLogo from "@/app/images/logos/githubLogo.png";
-import linkedinLogo from "@/app/images/logos/linkedinLogo.png";
-import instagramLogo from "@/app/images/logos/instagramLogo.png";
+import githubLogo from "../../images/logos/githubLogo.png";
+import linkedinLogo from "../../images/logos/linkedinLogo.png";
+import instagramLogo from "../../images/logos/instagramLogo.png";
 
 const Footer = () => {
   const routes = [
     { name: "Home", path: "/" },
-    { name: "Our work", path: "/projects" },
+    { name: "Our work", path: "/work" },
     { name: "Success stories", path: "/reviews" },
     { name: "About", path: "/about" },
     { name: "Contact", path: "/contact" },
@@ -56,9 +56,30 @@ const Footer = () => {
 
           <div className="flex items-center space-x-8">
             <p className="font-bold text-sf-lime">Follow us!</p>
-            <Link target="_blank" href="https://www.linkedin.com/company/setandforget/"><Image src={linkedinLogo} className="hover:scale-125 transition-transform"/></Link>
-            <Link target="_blank" href="https://github.com/Set-Forget/"><Image src={githubLogo} className="hover:scale-125 transition-transform"/></Link>
-            <Link target="_blank" href="https://www.instagram.com/setandforget.io/"><Image src={instagramLogo} className="hover:scale-125 transition-transform"/></Link>
+            <Link
+              target="_blank"
+              href="https://www.linkedin.com/company/setandforget/"
+            >
+              <Image
+                src={linkedinLogo}
+                className="hover:scale-125 transition-transform"
+              />
+            </Link>
+            <Link target="_blank" href="https://github.com/Set-Forget/">
+              <Image
+                src={githubLogo}
+                className="hover:scale-125 transition-transform"
+              />
+            </Link>
+            <Link
+              target="_blank"
+              href="https://www.instagram.com/setandforget.io/"
+            >
+              <Image
+                src={instagramLogo}
+                className="hover:scale-125 transition-transform"
+              />
+            </Link>
           </div>
         </div>
       </Container>

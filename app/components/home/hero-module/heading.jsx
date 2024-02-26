@@ -1,6 +1,6 @@
 import { useAnimate, cubicBezier } from "framer-motion";
 import Image from "next/image";
-import highlight from "@/public/highlight.svg";
+import highlight from "../../../../public/highlight.svg";
 import { useEffect } from "react";
 
 const Heading = () => {

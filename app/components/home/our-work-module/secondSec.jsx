@@ -1,11 +1,11 @@
 import React from 'react'
 import Container from '../../ecyce/container'
 import Image from "next/image";
-import benCollins from "@/app/images/logos/BenCollins.svg";
-import kia from "@/app/images/logos/Kia.svg";
-import oracle from "@/app/images/logos/Oracle.svg";
-import sandbox from "@/app/images/logos/Sandbox.svg";
-import slack from "@/app/images/logos/Slack.svg";
+import benCollins from "../../../images/logos/BenCollins.svg";
+import kia from "../../../images/logos/Kia.svg";
+import oracle from "../../../images/logos/Oracle.svg";
+import sandbox from "../../../images/logos/Sandbox.svg";
+import slack from "../../../images/logos/Slack.svg";
 import Testimonials from './testimonials';
 import Button from '../../ecyce/buttons';
 

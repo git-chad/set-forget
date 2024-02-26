@@ -1,18 +1,18 @@
 import React from "react";
 import Container from "../ecyce/container";
 import Image from "next/image";
-import drawnArrow from "@/public/drawn-arrow.svg";
-import benCol from "@/app/images/logos/BenCollins.svg";
-import slack from "@/app/images/logos/Slack.svg";
-import oracle from "@/app/images/logos/Oracle.svg";
-import sandbox from "@/app/images/logos/Sandbox.svg";
-import kia from "@/app/images/logos/Kia.svg";
-import woo from "@/app/images/logos/Frame245.svg";
-import hub from "@/app/images/logos/Frame246.svg";
-import sf from "@/app/images/logos/Frame247.svg";
-import beko from "@/app/images/logos/Frame248.svg";
-import loreal from "@/app/images/logos/Frame249.svg";
-import quote from "@/public/blueQuotes.svg"
+import drawnArrow from "../../../public/drawn-arrow.svg";
+import benCol from "../../images/logos/BenCollins.svg";
+import slack from "../../images/logos/Slack.svg";
+import oracle from "../../images/logos/Oracle.svg";
+import sandbox from "../../images/logos/Sandbox.svg";
+import kia from "../../images/logos/Kia.svg";
+import woo from "../../images/logos/Frame245.svg";
+import hub from "../../images/logos/Frame246.svg";
+import sf from "../../images/logos/Frame247.svg";
+import beko from "../../images/logos/Frame248.svg";
+import loreal from "../../images/logos/Frame249.svg";
+import quote from "../../../public/blueQuotes.svg";
 
 const ReviewsPage = () => {
   const logos = [
@@ -51,9 +51,17 @@ const ReviewsPage = () => {
         </div>
 
         <div className="relative col-span-12 mt-20">
-        <Image src={quote} className="absolute top-0 -left-12 fill-blue-400"/>
-        <Image src={quote} className="absolute -bottom-20 -right-12 rotate-180"/>
-          <h2 className="mb-8 text-smallHeading bold-neue">Hear it from them!</h2>
+          <Image
+            src={quote}
+            className="absolute top-0 -left-12 fill-blue-400"
+          />
+          <Image
+            src={quote}
+            className="absolute -bottom-20 -right-12 rotate-180"
+          />
+          <h2 className="mb-8 text-smallHeading bold-neue">
+            Hear it from them!
+          </h2>
           <div
             id="bento-grid"
             className="min-h-[549px] grid grid-cols-12 grid-rows-3 gap-5"
