@@ -6,6 +6,7 @@ import ApproachSlider from "../components/about-us-page/approachSlider";
 import Image from "next/image";
 import redSparkle from '../../public/red-sparkle.svg'
 import blueSparkle from '../../public/blue-sparkle.svg'
+import Navbar from "../components/ecyce/navbar";
 
 const Page = () => {
   const teamImages = [
@@ -29,6 +30,7 @@ const Page = () => {
 
   return (
     <div className="min-h-[100dvh] w-full bg-sf-black text-sf-cream flex flex-col justify-center">
+    <Navbar/>
       <Container className={"w-full px-20 py-32 2xl:py-64 grid grid-cols-12"}>
         <h1 className="col-span-12 text-center text-heading bold-neue mb-10 2xl:mb-5">
           We live for great projects

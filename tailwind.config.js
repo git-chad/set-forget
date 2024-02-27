@@ -39,7 +39,6 @@ module.exports = {
         "sf-green": "#228264",
         "sf-dblue": "#062841",
         "sf-lime": "#46dc8c",
-
         "g-red": "#ea4336",
         "g-green": "#34a853",
         "g-blue": "#4285f4",

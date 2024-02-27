@@ -1,6 +1,5 @@
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import Navbar from "./components/ecyce/navbar";
 import Footer from "./components/ecyce/footer";
 
 const poppins = Poppins({
@@ -17,7 +16,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${poppins.className} poppins`}>
-      <Navbar/>
       {children}
       <Footer/>
       </body>
