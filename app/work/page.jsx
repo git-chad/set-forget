@@ -26,7 +26,7 @@ const Page = () => {
 
   return (
     <div className="w-full min-h-screen bg-sf-black text-sf-cream flex flex-col justify-center text-balance">
-      <Container className={"w-full px-20 py-72 grid grid-cols-12"}>
+      <Container className={"w-full px-20 py-32 2xl:py-64 grid grid-cols-12"}>
         <div className="relative col-span-12">
           <h1 className="bold-neue text-heading">Here&apos;s what we do</h1>
           <p className="text-2xl">
@@ -42,7 +42,7 @@ const Page = () => {
           <Carousel items={items} speed="normal" />
           <Carousel items={items} direction="right" speed="normal" />
         </div>
-        <div className="col-span-12">
+        <div className="mt-16 col-span-12">
           <div className="flex flex-col">
             <div className="flex space-x-8 mb-16">
               <h1 className="bold-neue text-[3rem] leading-[28px]">

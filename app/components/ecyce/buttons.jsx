@@ -30,7 +30,7 @@ const Button = ({ type, text, className }) => {
     );
   } else if (type === "outline") { 
     return (
-      <button className={`min-w-56 px-6 h-14 rounded-[20px] text-sf-lime border-2 border-sf-lime text-xl font-semibold ${className || ""}`}>{text}</button>
+      <button className={`min-w-56 px-6 h-14 rounded-[20px] text-sf-lime border-2 border-sf-lime hover:bg-sf-lime hover:text-sf-dblue transition-colors text-xl font-semibold ${className || ""}`}>{text}</button>
     )
   }
 };

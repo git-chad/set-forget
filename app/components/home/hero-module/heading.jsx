@@ -15,11 +15,12 @@ const Heading = () => {
     "Efficiency",
   ];
 
+// changed from intervals of 105px to 120px
 useEffect(() => {
   const handleVerticalAnim = async () => {
-    await animateVert(scopeVert.current, {y: -105}, { duration: 0.5, ease: cubicBezier(0.86,0,0.07,1), delay: 1.3})
-    await animateVert(scopeVert.current, {y: -210}, { duration: 0.5, ease: cubicBezier(0.86,0,0.07,1), delay: 1.3})
-    await animateVert(scopeVert.current, {y: -315}, { duration: 0.5, ease: cubicBezier(0.86,0,0.07,1), delay: 1.3})
+    await animateVert(scopeVert.current, {y: -120}, { duration: 0.5, ease: cubicBezier(0.86,0,0.07,1), delay: 1.3})
+    await animateVert(scopeVert.current, {y: -240}, { duration: 0.5, ease: cubicBezier(0.86,0,0.07,1), delay: 1.3})
+    await animateVert(scopeVert.current, {y: -360}, { duration: 0.5, ease: cubicBezier(0.86,0,0.07,1), delay: 1.3})
     await animateVert(scopeVert.current, {y: 0}, {duration: 0});
     handleVerticalAnim()
   }
@@ -46,7 +47,7 @@ handleHorizontalAnim();
               {wordsHorizontal.map((word, index) => (
                 <span
                   key={index}
-                  className="min-w-[525px] text-center bold-neue pb-5"
+                  className="min-w-[525px] text-center bold-neue leading-none mb-2"
                 >
                   {word}
                 </span>
@@ -61,11 +62,12 @@ handleHorizontalAnim();
       <div className="flex space-x-6">
         <span className="text-display font-bold text-sf-lime">&</span> 
         <span className="text-display reg-neue">elevate your</span> 
-        <div className="relative text-display font-bold rounded-3.5xl w-[525px] h-[105px]">
+        
+        <div className="relative text-display font-bold rounded-3.5xl w-[525px] h-[120px]">
           <div className="absolute inset-0 bg-g-blue rounded-3.5xl flex items-start justify-center overflow-hidden">
-            <div ref={scopeVert} className="h-[420px] flex flex-col">
+            <div ref={scopeVert} className="h-[480px] flex flex-col">
                 {wordsVertical.map((word, index) => (
-                  <span key={index} className="min-h-[105px] justify-center items-center flex bold-neue pb-3">
+                  <span key={index} className="min-h-[120px] justify-center items-center flex bold-neue leading-none">
                     {word}
                   </span>
                 ))}

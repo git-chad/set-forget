@@ -63,7 +63,7 @@ const Carousel = ({
     <div
       ref={containerRef}
       className={cn(
-        "scroller relative z-20  max-w-7xl overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
+        "scroller relative z-20 overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
         className
       )}
     >
@@ -78,7 +78,7 @@ const Carousel = ({
         {items.map((item, idx) => (
           <li
             className="w-[350px] max-w-full relative rounded-3xl border border-b-0 flex-shrink-0 border-gray-700 px-8 py-6 md:w-[427px] h-[333px] bg-[#272727]"
-            key={item.name}
+            key={item.name + idx}
           >
             <blockquote>
               <div

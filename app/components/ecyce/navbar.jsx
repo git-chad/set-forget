@@ -1,17 +1,33 @@
 "use client";
-import './util.scss'
+import "./util.scss";
 import Image from "next/image";
-import React, { useState } from "react";
-import sfSmall from "../../images/logos/SfSmall.png"
+import React, { useEffect, useState } from "react";
+import sfSmall from "../../images/logos/SfSmall.png";
 import Link from "next/link";
 import Dropdown from "./dropdown";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
 
-  console.log(open, 'navbar open check');
+  const handleScroll = () => {
+    const currentScrollPos = window.scrollY;
+    setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
+    setPrevScrollPos(currentScrollPos);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [prevScrollPos, visible, handleScroll]);
+
   return (
-    <nav className="z-50 w-screen py-10 px-20 fixed">
+    <nav
+      className={`z-50 w-screen py-10 px-20 fixed bg-sf-black ${
+        visible ? "top-0" : "-top-[100%]"
+      } transition-top duration-500`}
+    >
       <div className="mx-auto max-w-[1440px] h-8 flex justify-between items-center">
         <Link className="flex items-center space-x-2" href="/">
           <Image src={sfSmall} className="w-8 h-8" alt="Set & Forget Logo" />

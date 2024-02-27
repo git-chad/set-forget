@@ -8,10 +8,10 @@ import blobCard from "../../../../public/blob-card.svg";
 
 const StatsPage = () => {
   return (
-    <div className=" bg-sf-black text-black">
-      <div className="bg-sf-white rounded-t-[80px]">
+    <div className=" bg-sf-black">
+      <div className="bg-sf-white rounded-t-[80px] text-sf-dblue">
         <Container className={"py-16 grid grid-cols-12 gap-5 px-20"}>
-          <div className="text-sf-dblue col-span-12 flex justify-between">
+          <div className="col-span-12 flex justify-between items-center">
             <div className="relative">
             <Image src={sparkle} alt="" className="absolute -top-10 -left-10"/>
               <h1 className="text-heading leading-none reg-neue">Why</h1>
@@ -38,7 +38,7 @@ const StatsPage = () => {
               <span className="z-10 text-display font-bold text-g-blue bold-neue">+50</span>
               <span className="z-10 font-bold text-2xl">Companies</span>
               <div className="z-10 border border-black w-52 my-4" />
-              <p className="z-10 text-xl text-balance">
+              <p className="z-10 text-base 2xl:text-xl">
                 More than just a service provider! We are a partner in growth
                 for over <b>50 amazing companies</b>. Each one has a unique story, and
                 we&apos;re thrilled to be part of it!
@@ -50,7 +50,7 @@ const StatsPage = () => {
               <span className="z-10 text-display font-bold text-g-yellow  bold-neue">+200</span>
               <span className="z-10 font-bold text-2xl">Projects</span>
               <div className="z-10 border border-black w-52 my-4" />
-              <p className="z-10 text-xl text-balance">
+              <p className="z-10 text-base 2xl:text-xl text-balance">
                 Our journey includes more than <b>200 projects!</b> Each one is a new
                 adventure in creativity and problem-solving. We love what we do,
                 and it shows in our work!
@@ -62,7 +62,7 @@ const StatsPage = () => {
               <span className="z-10 text-display font-bold text-g-red  bold-neue">+7</span>
               <span className="z-10 font-bold text-2xl">Avg hours saved/week</span>
               <div className="z-10 border border-black w-52 my-4" />
-              <p className="z-10 text-xl text-balance">
+              <p className="z-10 text-base 2xl:text-xl text-balance">
                 Our solutions save our clients over <b>7 hours</b> per week, freeing
                 them up to focus on what they do best... innovating and leading
                 their industries.

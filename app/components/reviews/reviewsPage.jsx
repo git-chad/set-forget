@@ -30,9 +30,9 @@ const ReviewsPage = () => {
 
   return (
     <div className="w-full bg-sf-black text-sf-cream flex flex-col justify-center text-balance">
-      <Container className={"w-full px-20 py-72 grid grid-cols-12"}>
+      <Container className={"w-full px-20 py-32 2xl:py-64 grid grid-cols-12"}>
         <div className="col-span-12">
-          <div className="flex justify-between items-center">
+          <div className="flex items-center space-x-8">
             <h1 className=" text-smallHeading 2xl:text-heading bold-neue">
               Expert allies
             </h1>
@@ -41,11 +41,9 @@ const ReviewsPage = () => {
               Shaping future success
             </h1>
           </div>
-          <div className="mt-8 flex justify-center items-center flex-wrap space-x-12">
+          <div className="mt-16 grid grid-cols-5 grid-rows-2">
             {logos.map((logo, index) => (
-              <div className="min-w-40" key={index}>
-                <Image src={logo} className="w-full mx-auto" />
-              </div>
+              <Image key={index} src={logo} className="mx-auto" />
             ))}
           </div>
         </div>
