@@ -17,6 +17,10 @@ const Navbar = () => {
     setPrevScrollPos(currentScrollPos);
   };
 
+  const closeDropdown = () => {
+    setOpen(false);
+  }
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -50,7 +54,7 @@ const Navbar = () => {
         </button>
       </div>
 
-      <Dropdown isOpen={open} />
+      <Dropdown isOpen={open} closeDropdown={closeDropdown}/>
     </nav>
   );
 };

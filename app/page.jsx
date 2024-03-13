@@ -21,7 +21,6 @@ export default function Home() {
 
   return (
     <main>
-      <Navbar />
       <Hero />
       <StatsPage />
       <Carousels type="work" />

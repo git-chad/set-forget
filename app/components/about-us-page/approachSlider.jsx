@@ -32,31 +32,42 @@ const ApproachSlider = () => {
   ];
 
   useEffect(() => {
+    let isMounted = true;
     const handleVerticalAnim = async () => {
-      await animateVert(
-        scopeVert.current,
-        { y: -527 },
-        { duration: 0.5, ease: cubicBezier(0.86, 0, 0.07, 1), delay: 2.6 }
-      );
-      await animateVert(
-        scopeVert.current,
-        { y: -1054 },
-        { duration: 0.5, ease: cubicBezier(0.86, 0, 0.07, 1), delay: 2.6 }
-      );
-      await animateVert(
-        scopeVert.current,
-        { y: -1581 },
-        { duration: 0.5, ease: cubicBezier(0.86, 0, 0.07, 1), delay: 2.6 }
-      );
-      await animateVert(
-        scopeVert.current,
-        { y: -2108 },
-        { duration: 0.5, ease: cubicBezier(0.86, 0, 0.07, 1), delay: 2.6 }
-      );
-      await animateVert(scopeVert.current, { y: 0 }, { duration: 0 });
-      handleVerticalAnim();
+      while (isMounted) {
+        await animateVert(
+          scopeVert.current,
+          { y: -527 },
+          { duration: 0.5, ease: cubicBezier(0.86, 0, 0.07, 1), delay: 2.6 }
+        );
+        if (!isMounted) break;
+        await animateVert(
+          scopeVert.current,
+          { y: -1054 },
+          { duration: 0.5, ease: cubicBezier(0.86, 0, 0.07, 1), delay: 2.6 }
+        );
+        if (!isMounted) break;
+        await animateVert(
+          scopeVert.current,
+          { y: -1581 },
+          { duration: 0.5, ease: cubicBezier(0.86, 0, 0.07, 1), delay: 2.6 }
+        );
+        if (!isMounted) break;
+        await animateVert(
+          scopeVert.current,
+          { y: -2108 },
+          { duration: 0.5, ease: cubicBezier(0.86, 0, 0.07, 1), delay: 2.6 }
+        );
+        if (!isMounted) break;
+        await animateVert(scopeVert.current, { y: 0 }, { duration: 0 });
+        if (!isMounted) break;
+        handleVerticalAnim();
+      }
     };
     handleVerticalAnim();
+    return () => {
+      isMounted = false;
+    };
   }, []);
 
   return (

@@ -2,12 +2,12 @@ import React from "react";
 import Link from "next/link";
 import { AnimatePresence, motion, cubicBezier } from "framer-motion";
 
-const Dropdown = ({ isOpen }) => {
+const Dropdown = ({ isOpen, closeDropdown }) => {
   const routes = [
-    { name: "Our work", path: "/work", hover: 'hover:text-g-red' },
-    { name: "Success stories", path: "/reviews", hover: 'hover:text-g-green' },
-    { name: "About", path: "/about", hover: 'hover:text-g-blue' },
-    { name: "Contact", path: "/contact", hover: 'hover:text-g-yellow' },
+    { name: "Our work", path: "/work", hover: "hover:text-g-red" },
+    { name: "Success stories", path: "/reviews", hover: "hover:text-g-green" },
+    { name: "About", path: "/about", hover: "hover:text-g-blue" },
+    { name: "Contact", path: "/contact", hover: "hover:text-g-yellow" },
   ];
 
   const dropdownVariants = {
@@ -57,6 +57,10 @@ const Dropdown = ({ isOpen }) => {
     },
   };
 
+  const handleClick = () => {
+    closeDropdown();
+  };
+
   return (
     <AnimatePresence>
       {isOpen && (
@@ -77,7 +81,10 @@ const Dropdown = ({ isOpen }) => {
               <div className="overflow-hidden" key={index}>
                 <motion.div variants={linkVariants}>
                   <Link href={route.path}>
-                    <p className={`reg-neue text-8xl text-center font-bold text-[#5e5e5e] ${route.hover} transition-colors duration-500 leading-none`}>
+                    <p
+                      onClick={handleClick}
+                      className={`reg-neue text-8xl text-center font-bold text-[#5e5e5e] ${route.hover} transition-colors duration-500 leading-none`}
+                    >
                       {route.name}
                     </p>
                   </Link>

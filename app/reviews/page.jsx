@@ -5,7 +5,6 @@ import Navbar from '../components/ecyce/navbar'
 const reviewsPage = () => {
   return (
     <div>
-    <Navbar/>
       <ReviewsPage/>
     </div>
   )

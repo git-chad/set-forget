@@ -17,26 +17,48 @@ const Heading = () => {
 
 // changed from intervals of 105px to 120px
 useEffect(() => {
+  let isMounted = true;
+
   const handleVerticalAnim = async () => {
-    await animateVert(scopeVert.current, {y: -120}, { duration: 0.5, ease: cubicBezier(0.86,0,0.07,1), delay: 1.3})
-    await animateVert(scopeVert.current, {y: -240}, { duration: 0.5, ease: cubicBezier(0.86,0,0.07,1), delay: 1.3})
-    await animateVert(scopeVert.current, {y: -360}, { duration: 0.5, ease: cubicBezier(0.86,0,0.07,1), delay: 1.3})
-    await animateVert(scopeVert.current, {y: 0}, {duration: 0});
-    handleVerticalAnim()
-  }
-  handleVerticalAnim()
-}, [])
+    while (isMounted) {
+      await animateVert(scopeVert.current, { y: -120 }, { duration: 0.5, ease: cubicBezier(0.86, 0, 0.07, 1), delay: 1.3 });
+      if (!isMounted) break;
+      await animateVert(scopeVert.current, { y: -240 }, { duration: 0.5, ease: cubicBezier(0.86, 0, 0.07, 1), delay: 1.3 });
+      if (!isMounted) break;
+      await animateVert(scopeVert.current, { y: -360 }, { duration: 0.5, ease: cubicBezier(0.86, 0, 0.07, 1), delay: 1.3 });
+      if (!isMounted) break;
+      await animateVert(scopeVert.current, { y: 0 }, { duration: 0 });
+    }
+  };
+  handleVerticalAnim();
+
+  return () => {
+    isMounted = false;
+  };
+}, []);
+
 
 useEffect(() => {
+  let isMounted = true;
+
   const handleHorizontalAnim = async () => {
-    await animate(scope.current, { x: -525 }, { duration: 0.6, ease: cubicBezier(0.77,0,0.18,1), delay: 1});
-    await animate(scope.current, { x: -1050 }, { duration: 0.6, ease: cubicBezier(0.77,0,0.18,1), delay: 1});
-    await animate(scope.current, { x: -1575 }, { duration: 0.6, ease: cubicBezier(0.77,0,0.18,1), delay: 1});
-    await animate(scope.current, { x: 0 }, { duration: 0 });
-    handleHorizontalAnim();
-}
-handleHorizontalAnim();
+    while (isMounted) {
+      await animate(scope.current, { x: -525 }, { duration: 0.6, ease: cubicBezier(0.77, 0, 0.18, 1), delay: 1 });
+      if (!isMounted) break;
+      await animate(scope.current, { x: -1050 }, { duration: 0.6, ease: cubicBezier(0.77, 0, 0.18, 1), delay: 1 });
+      if (!isMounted) break;
+      await animate(scope.current, { x: -1575 }, { duration: 0.6, ease: cubicBezier(0.77, 0, 0.18, 1), delay: 1 });
+      if (!isMounted) break;
+      await animate(scope.current, { x: 0 }, { duration: 0 });
+    }
+  };
+  handleHorizontalAnim();
+
+  return () => {
+    isMounted = false;
+  };
 }, []);
+
 
   return (
     <div className="flex flex-col space-y-8">

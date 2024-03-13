@@ -27,7 +27,6 @@ const Page = () => {
 
   return (
     <div className="w-full min-h-screen bg-sf-black text-sf-cream flex flex-col justify-center text-balance">
-    <Navbar/>
       <Container className={"w-full px-20 py-32 2xl:py-64 grid grid-cols-12"}>
         <div className="relative col-span-12">
           <h1 className="bold-neue text-heading">Here&apos;s what we do</h1>
