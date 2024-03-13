@@ -77,9 +77,9 @@ const ApproachSlider = () => {
         <h2 className="text-heading bold-neue leading-none mb-3">
           Our approach
         </h2>
-        <Link href="#" className="text-2xl text-sf-lime">
+        {/* <Link href="#" className="text-2xl text-sf-lime">
           Learn more
-        </Link>
+        </Link> */}
       </div>
       <Image src={team02} className="rounded-[68px] col-span-6 h-[527px]" />
 
