@@ -94,7 +94,7 @@ const TeamGrid = () => {
       className="grid grid-cols-5 grid-rows-3 w-full gap-5"
     >
       {items.map((item, idx) => (
-        <div className="col-span-1 rounded-2xl bg-gradient-to-b from-gray-800 to-gray-700 h-64 p-3">
+        <div key={idx} className="col-span-1 rounded-2xl bg-gradient-to-b from-gray-800 to-gray-700 h-64 p-3">
           {item.id}
         </div>
       ))}
@@ -125,7 +125,7 @@ const PartnerGrid = () => {
       className="grid grid-cols-4 grid-rows-4 w-full gap-5"
     >
       {items.map((item, idx) => (
-        <div className="col-span-1 rounded-2xl bg-gradient-to-b from-gray-800 to-gray-700 h-64 p-3">
+        <div key={idx} className="col-span-1 rounded-2xl bg-gradient-to-b from-gray-800 to-gray-700 h-64 p-3">
           {item.id}
         </div>
       ))}
