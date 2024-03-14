@@ -4,24 +4,26 @@ import Button from "../../ecyce/buttons";
 const EmailForm = () => {
   const [selectedTags, setSelectedTags] = useState([]);
   const tags = [
-    "Workspace development",
-    "Data analysis",
-    "Google Sheets",
-    "Webapps",
-    "Software Development",
-    "UX/UI Design",
-    "Notion",
-    "Add - Ons",
-    "Integrations",
-  ];
+    {id: 1, name: "Workspace development"},
+    {id: 2, name: "Data analysis"},
+    {id: 3, name: "Google Sheets"},
+    {id: 4, name: "Webapps"},
+    {id: 5, name: "Software Development"},
+    {id: 6, name: "UX/UI Design"},
+    {id: 7, name: "Notion"},
+    {id: 8, name: "Add - Ons"},
+    {id: 9, name: "Integrations"},]
+  2
 
   const toggleTag = (tag) => {
-    if (selectedTags.includes(tag)) {
-      setSelectedTags(selectedTags.filter(t => t !== tag));
+    const tagId = tag.id;
+    if (selectedTags.includes(tagId)) {
+      setSelectedTags(selectedTags.filter(tId => tId !== tagId));
     } else {
-      setSelectedTags([...selectedTags, tag]);
+      setSelectedTags([...selectedTags, tagId]);
     }
   };
+  
 
   return (
     <div className="max-w-[650px]">
@@ -63,10 +65,10 @@ const EmailForm = () => {
               <div
                 onClick={() => toggleTag(tag)}
                 type="checkbox"
-                className={`cursor-pointer transition-colors px-4 inline-flex bg-transparent min-h-14 border border-sf-cream rounded-[20px] items-center justify-center ${selectedTags.includes(tag) ? 'bg-[#fefce1] text-sf-dblue' : ''}`}
-                key={index}
+                className={`cursor-pointer transition-colors px-4 inline-flex bg-transparent min-h-14 border border-sf-cream rounded-[20px] items-center justify-center ${selectedTags.includes(tag.id) ? 'bg-sf-egg text-sf-dblue' : ''}`}
+                key={tag.id}
               >
-                {tag}
+                {tag.name}
               </div>
             ))}
           </div>
