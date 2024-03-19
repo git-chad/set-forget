@@ -92,7 +92,7 @@ const ImagesSlider = ({
     },
     upExit: {
       opacity: 1,
-      y: "-150%",
+      x: "-150%",
       transition: {
         duration: 1,
       },

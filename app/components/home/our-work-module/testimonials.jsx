@@ -8,18 +8,18 @@ import quotes from '../../../../public/quotes.svg';
 const testimonials = [
   {
     id: 1,
-    name: 'Marvin',
-    text: "I'm extremely grateful with Mealtone and his minions. They created the most incredible app for managing my inventions' electronics and I can't be more happy with the results.",
+    name: 'Ben Collins',
+    text: "I'm delighted to partner with Set & Forget and recommend them as my preferred consulting partner. Their work and approach is top quality and they are always professional and courteous to deal with.",
   },
   {
     id: 2,
-    name: 'George Floyd',
-    text: "Gonchi's team went above and beyond... Their dedication resulted in a killer, breathtaking application!",
+    name: 'Mike F',
+    text: "I worked with the Set and Forget team, and I highly recommend them. We did a couple of financial modeling workflow automations, and at every step of the way the entire team were quick to respond to my emails, always happy to jump on a call to explain things or answer questions, and most importantly -- did great work! While I contracted them for just a one-time project, I was so happy with their work and their communication that I will continue to work with them going forward. Really happy with everything -- strongly recommend them for your next Google Sheets project.",
   },
   {
     id: 3,
-    name: 'Shaniqua 💅🏿',
-    text: "Workin wit Chowlow wuz a game-changer for our biz yo. Da attanshon 2 detail and hood solutionz have significantly improved our ops. Respect blood.",
+    name: 'Claire Oliver',
+    text: "Amazing! I had a problem I wanted to solve that was way beyond my skill set and in very little time the Set & Forget team had it all figured out. So appreciative of the help, and hours of work that was saved!",
   },
 ];
 
@@ -32,13 +32,13 @@ const Testimonials = () => {
         const nextIndex = (testimonials.findIndex(t => t.id === prev.id) + 1) % testimonials.length;
         return testimonials[nextIndex];
       });
-    }, 10000); 
+    }, 10000);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="w-[713px] h-56 mb-16 flex flex-col justify-center items-center">
+    <div className="w-[713px] min-h-56 mb-16 flex flex-col justify-center items-center">
       <AnimatePresence mode='wait'>
         <motion.div
           key={currentTestimonial.id}

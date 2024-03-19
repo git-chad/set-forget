@@ -65,7 +65,7 @@ const EmailForm = () => {
               <div
                 onClick={() => toggleTag(tag)}
                 type="checkbox"
-                className={`cursor-pointer transition-colors px-4 inline-flex bg-transparent min-h-14 border border-sf-cream rounded-[20px] items-center justify-center ${selectedTags.includes(tag.id) ? 'bg-sf-egg text-sf-dblue' : ''}`}
+                className={`cursor-pointer transition-colors px-4 inline-flex min-h-14 border border-sf-cream rounded-[20px] items-center justify-center ${selectedTags.includes(tag.id) ? ' bg-sf-egg text-sf-dblue' : ''}`}
                 key={tag.id}
               >
                 {tag.name}

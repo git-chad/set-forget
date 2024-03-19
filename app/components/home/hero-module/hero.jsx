@@ -7,9 +7,9 @@ import Container from "../../ecyce/container";
 
 const Hero = () => {
   return (
-    <div className="w-full bg-sf-black text-sf-cream flex flex-col justify-center">
+    <div className="w-full min-h-screen bg-sf-black text-sf-cream flex flex-col justify-center">
       {/* remove w-full to cancel out mx-auto */}
-      <Container className={"w-full px-20 py-32"}>
+      <Container className={"w-full px-20 py-36"}>
         <Heading />
         <p className="text-2xl w-[865px] self-start mt-8">
           Optimize your digital workspace. We dedicate to elevate your
