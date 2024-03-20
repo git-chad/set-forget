@@ -41,7 +41,7 @@ const StatsPage = () => {
     <p className="z-10 text-base 2xl:text-xl">
       More than just a service provider! We are a partner in growth
       for over <b>50 amazing companies</b>. Each one has a unique story, and
-      we're thrilled to be part of it!
+      we&apos;re thrilled to be part of it!
     </p>
     <Image src={arrowStats} className="z-10 absolute top-2 right-4"/>
     <Image src={blobCard} className="absolute top-0 right-0"/>
