@@ -47,7 +47,7 @@ const Carousels = ({ type }) => {
 
   if (type === "work") {
     return (
-      <div className="flex items-center h-52 bg-sf-lime text-sf-dblue hover:text-sf-white transition-colors duration-700 text-[5rem] bold-neue overflow-hidden cursor-default">
+      <div className="flex items-center lg:h-52 bg-sf-lime text-sf-dblue hover:text-sf-white transition-colors duration-700 text-heading lg:text-[5rem] bold-neue overflow-hidden cursor-default">
         <div ref={scope} className="flex items-center w-[2716px] gap-[60px]">
           {work.map((word, index) => (
             <span key={index} className="inline-block flex-shrink-0">
@@ -65,7 +65,7 @@ const Carousels = ({ type }) => {
   }
 
   return (
-    <div className="flex items-center h-52 bg-sf-beige text-sf-dblue hover:bg-sf-green hover:text-sf-beige transition-colors duration-700 text-[5rem] bold-neue overflow-hidden cursor-default">
+    <div className="flex items-center lg:h-52 bg-sf-beige text-sf-dblue hover:bg-sf-green hover:text-sf-beige transition-colors duration-700 text-heading lg:text-[5rem] bold-neue overflow-hidden cursor-default">
       <div ref={scope} className="flex items-center w-[2716px] gap-[60px]">
         {talk.map((word, index) => (
           <span key={index} className="inline-block flex-shrink-0">

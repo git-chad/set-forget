@@ -24,7 +24,7 @@ export default function Home() {
       <Hero />
       <StatsPage />
       <Carousels type="work" />
-      <WorkPage />
+      {/* <WorkPage /> */}
       <Carousels type={"talk"} />
       <LetsWorkPage />
     </main>

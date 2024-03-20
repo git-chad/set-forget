@@ -83,7 +83,7 @@ const Dropdown = ({ isOpen, closeDropdown }) => {
                   <Link href={route.path}>
                     <p
                       onClick={handleClick}
-                      className={`reg-neue text-8xl text-center font-bold text-[#5e5e5e] ${route.hover} transition-colors duration-500 leading-none`}
+                      className={`reg-neue text-6xl lg:text-8xl text-center font-bold text-[#5e5e5e] ${route.hover} transition-colors duration-500 leading-none`}
                     >
                       {route.name}
                     </p>

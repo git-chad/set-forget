@@ -28,7 +28,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`z-50 w-screen py-10 px-20 fixed bg-gradient-to-b from-sf-black to-transparent ${
+      className={`z-50 w-screen lg:py-10 py-8 lg:px-20 px-5 fixed bg-gradient-to-b from-sf-black to-transparent ${
         visible ? "top-0" : "-top-[100%]"
       } transition-top duration-500`}
     >

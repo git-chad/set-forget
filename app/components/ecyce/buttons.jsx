@@ -7,7 +7,7 @@ const Button = ({ type, text, className }) => {
   if (type === "solid") {
     return (
       <button 
-      className={`relative bg-sf-lime text-sf-dblue flex justify-center items-center space-x-8 rounded-3xl w-64 h-[74px] mt-12 ${className || ""}`}
+      className={`relative bg-sf-lime text-sf-dblue flex justify-center items-center space-x-8 rounded-3xl w-64 h-[74px] mt-8 lg:mt-12 ${className || ""}`}
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
       >
