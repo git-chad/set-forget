@@ -1,5 +1,3 @@
-import Image from "next/image";
-import highlight from "../../../../public/highlight.svg";
 import { useEffect, useState } from "react";
 import ScreenHeading from "../hero-module/screenHeading"
 import MobileHeading from "../hero-module/mobileHeading"

@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import Heading from "./heading";
 import Image from "next/image";
